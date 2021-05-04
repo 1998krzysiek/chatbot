@@ -2,7 +2,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from uploads.core import views
-
+import settings
 from django.views.static import serve
 from django.conf.urls import url
 
