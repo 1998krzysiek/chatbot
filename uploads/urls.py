@@ -7,7 +7,7 @@ from django.views.static import serve
 from django.conf.urls import url
 
 urlpatterns = [
-    url('', views.home, name='home'),
+    url('^$', views.home, name='home'),
     url('bosak/', views.bosak, name='bosak'),
     url('biedron/', views.biedron, name='biedron'),
     url('duda/', views.duda, name='duda'),
