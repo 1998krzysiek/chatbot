@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Chatbot polityczny</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  </head>
+  <body>
+    <header>
+      <nav>
+          <ul>
+              <li><a href="{% url 'home' %}">Strona Główna</a></li>
+              <li><a href="{% url 'bosak' %}">Krzysztof Bosak</a></li>
+              <li><a href="{% url 'biedron' %}">Robert Biedroń</a></li>
+              <li><a href="{% url 'duda' %}">Andrzej Duda</a></li>
+              <li><a href="{% url 'holownia' %}">Szymon Hołownia</a></li>
+
+
+          </ul>
+      </nav>
+    </header>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

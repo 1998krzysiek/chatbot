@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="conteiner_all">
+    <div class="conteiner">
+        <div class="photo">
+            <img src="/static/img/duda.jpg\" alt = "Andrzej Duda">
+            <h1>Andrzej Duda</h1>
+        </div>
+
+
+        <div class="content">
+
+            <div class="flexbox">
+
+
+
+
+            <div class="text inline">
+                <h1>Informacje ogólne</h1>
+                <h2>Prezydent RP</h2>
+                <h2>Data i miejsce urodzenia <p>1972-05-16, Kraków</p></h2>
+                <h2 class="inline">Zawód:</h2> <p>nauczyciel akademicki</p><br>
+                <h2 class="inline">Wykształcenie:</h2> <p>wyższe</p><br>
+                <h2 class="inline">Wygrana w wyborach:</h2> <p>wybory na Prezydenta RP 2020</p><br>
+                <h2 class="inline">Komitet wyborczy:</h2> <p>Komitet Wyborczy Kandydata na </p><br>
+                <p>Prezydenta Rzeczypospolitej Polskiej Andrzeja Dudy</p>
+
+            </div>
+            <div class="text inline">
+                <h1>Notka biograficzna</h1>
+            <p1>Prezydent RP, w II turze wyborów w 2015 r. pokonał Bronisława Komorowskiego. Dr nauk prawnych, pracownik naukowo-dydaktyczny Uniwersytetu Jagiellońskiego. W l. 2000-2002 członek Unii Wolności, następnie członek PiS (do 2015 r.). Wiceminister sprawiedliwości w rządzie J. Kaczyńskiego, w l. 2007-2011: członek Trybunału Stanu, podsekretarz stanu w Kancelarii Prezydenta RP L. Kaczyńskiego. Poseł VII kadencji. W 2014 r. szef sztabu wyborczego PiS do Parlamentu Europejskiego. W latach 2014-2015 europoseł PiS z okręgu małopolsko-świętokrzyskiego. W 2010 r. bez powodzenia kandydował na urząd prezydenta Krakowa. Ubiega się o reelekcję na stanowisko prezydenta RP w 2020 r.</p1>
+            </div>
+            </div>
+
+
+            <div class="stripe"></div>
+            <div class="text">
+                <h1>Pytania na które odpowiadam</h1>
+                <ul>
+                    <li>W której zagranicznej stolicy złoży pan lub pani swoją pierwszą oficjalną wizytę po objęciu urzędu prezydenta?</li>
+                    <li>Jak wrócić do wysokiego tempa rozwoju z przed pandemii? Czy to jest realne i w jakiej perspektywie czasowej?</li>
+                    <li>Czy jest Pan za umożliwieniem przygotowania do pierwszej komunii świętej na lekcjach religii w szkole</li>
+                    <li>Euro czy złoty. Czy i ewentualnie, kiedy Polska powinna przyjąć walutę euro?</li>
+                    <li>Dziesiątki tysięcy uchodźców na granicy UE. Jak powinna zachować się Polska?</li>
+                </ul>
+                <h2>Pytania możesz parafrazować oraz poprosić o uargumentowanie danej tezy</h2>
+            </div>
+            <div class="text inline"></div>
+        </div>
+    </div>
+</main>
+
+
+
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Andrzej_Duda"
+  agent-id="197e39e1-f27d-48d7-91a9-8e258420aed2"
+  language-code="pl"
+></df-messenger>
+
+{% endblock %}

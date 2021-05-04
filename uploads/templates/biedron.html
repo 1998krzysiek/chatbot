@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<main class="conteiner_all">
+    <div class="conteiner">
+        <div class="photo">
+            <img src="/static/img/biedron.jpg\" alt = "Robert Biedroń">
+            <h1>Robert Biedroń</h1>
+        </div>
+
+
+        <div class="content">
+            <h1>Dane wyborczne</h1>
+            <div class="text1">
+                <h2>Kandydat na Prezydenta RP</h2>
+                <h2>Komitet Wyborczy: <p>Komitet Wyborczy Kandydata na </p></h2>
+                <p> Prezydenta Rzeczypospolitej Polskiej Roberta Biedronia</p><br>
+                <h2 class="inline">Strona komitetu:</h2> <a href="https://kw.robertbiedron.pl">https://kw.robertbiedron.pl</a> <br>
+                <h2 class="inline">Strona kandydata:</h2> <a href="https://www.bosak2020.pl">https://robertbiedron.pl</a> <br>
+                <h2 class="inline">Program:</h2> <a href ="https://robertbiedron.pl#program">https://robertbiedron.pl#program</a>
+
+            </div>
+
+
+            <div class="flexbox">
+                    <div class="text inline margin">
+                        <h1>Informacje ogólne</h1>
+                        <h3>Poseł do Parlamentu Europejskiego</h3>
+                    <h2 class="inline">Klub/koło:</h2> <p class="inline">Grupa Postępowego Sojuszu Socjalistów i Demokratów w Parlamencie Europejskim</p> <br>
+                    <h2 class="inline">Data i miejsce urodzenia:</h2> <p>1976-04-13, Rymanów</p><br>
+                    <h2 class="inline">Zawód:</h2> <p>politolog</p><br>
+                    <h2 class="inline">Wykształcenie:</h2> <p>wyższe</p><br>
+                    <h2 class="inline">Wygrana w wyborach:</h2> <p>wybory do Parlamentu Europejskiego 2019</p><br>
+                    <h2 class="inline">Komitet wyborczy:</h2> <p>Wiosna</p><br>
+                    <h2 class="inline">Okręg:</h2> <p>4 Warszawa</p><br>
+                    <h2 class="inline">Liczba głosów:</h2> <p>96 388 (6,96%)</p><br>
+                    </div>
+                    <div class="text inline">
+                        <h1>Notka biograficzna</h1>
+                    <p1>Robert Biedroń (13.04.1976, Rymanów), działacz społeczny, magister politologii na Wydziale Nauk Politycznych Akademii Humanistycznej w Pułtusku. Zaangażowany w działalność Stowarzyszenia Lambda i Organizacji OutRage! W l. 2001-2009 prezes Kampanii Przeciw Homofobii. W l. 2001-2005 członek Rady Programowo-Konsultacyjnej przy Pełnomocniku Rządu ds. Równego Statusu Kobiet i Mężczyzn. W przeszłości związany z SdRP i SLD. Poseł VII kad., w l. 2011-2014 wiceprzewodniczący KP Twój Ruch. Zasiadał m.in. w komisji spraw zagranicznych oraz pełnił funkcję wiceprzewodniczącego komisji sprawiedliwości i praw człowieka. W l. 2014-2018 prezydent Słupska. W 2019 r. założył partię Wiosna. W wyborach 2019 r. został posłem do Parlamentu Europejskiego. Kandydat na prezydenta RP w wyborach 2020 r.
+        </p1>
+                </div>
+            </div>
+            <div class="stripe"></div>
+            <div class="text">
+                <h1>Pytania na które odpowiadam</h1>
+
+                <ul>
+                    <li>W której zagranicznej stolicy złoży pan lub pani swoją pierwszą oficjalną wizytę po objęciu urzędu prezydenta?</li>
+                    <li>Jak wrócić do wysokiego tempa rozwoju z ostatnich lat? Czy to jest realne i wjakiej perspektywie czasowej?</li>
+                    <li>Jaka jest pana koncepcja zapewnienia bezpieczeństwa energetycznego?</li>
+                    <li>Dziesiątki tysięcy uchodźców na granicy UE. Jak powinna zachować się Polska?</li>
+                    <li>Małżeństwa homoseksualne,później adopcja przez nie dzieci. Czy zgodzi się Pan nate zmiany?</li>
+                </ul>
+                <h2>Pytania możesz parafrazować</h2>
+            </div><div class="text inline"></div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Robert_Biedroń"
+  agent-id="69170994-5fcf-4bf0-a024-ccac26d4f97c"
+  language-code="pl"
+></df-messenger>
+{% endblock %}

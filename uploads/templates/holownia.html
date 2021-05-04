@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="conteiner_all">
+    <div class="conteiner">
+        <div class="photoo">
+            <img src="/static/img/holownia.jpg\" alt = "Szymon Hołownia">
+            <h1>Szymon Hołownia</h1>
+        </div>
+
+
+        <div class="content">
+            <h1>Dane wyborczne</h1>
+            <div class="text1">
+                <h2>Kandydat na Prezydenta RP</h2>
+                <h2>Komitet Wyborczy: <p>Komitet Wyborczy Kandydata na </p></h2>
+                <p> Prezydenta Rzeczypospolitej Polskiej Szymona Hołowni </p><br>
+                <h2 class="inline">Strona komitetu:</h2> <a href="https://holownia2020.pl/">https://holownia2020.pl/</a> <br>
+                <h2 class="inline">Strona kandydata:</h2> <a href="https://holownia2020.pl/">https://holownia2020.pl/</a> <br>
+                <h2 class="inline">Program:</h2> <a href ="https://holownia2020.pl/wp-content/uploads/2020/02/Nowy-Prezydent.pdf">https://holownia2020.pl/wp-content/uploads/2020/02/Nowy-Prezydent.pdf</a>
+
+            </div>
+
+
+            <div class="flexbox">
+                <div class="text inline margin">
+                    <h1>Informacje ogólne</h1>
+                <h2 class="inline">Data i miejsce urodzenia:</h2> <p>1976-09-03, Białystok</p><br>
+                <h2 class="inline">Zawód:</h2> <p>dziennikarz, publicysta, prezenter</p><br>
+                <h2 class="inline">Wykształcenie:</h2> <p>średnie</p><br>
+                <h2 class="inline">Komitet wyborczy:</h2> <p>Kandydat niezrzeszony</p><br>
+
+                </div>
+                <div class="text inline">
+                    <h1>Notka biograficzna</h1>
+                <p1>Studiował psychologię na SWPS. Pisarz, dziennikarz, publicysta; był redaktorem m.in. „Gazety Wyborczej”, „Newsweeka”, „Tygodnika Powszechnego”. Pracował jako prezenter radiowy i prezenter telewizyjny, współprowadził m.in. programy „Mam Talent!” i „Mamy Cię!”. W l. 2007-2012 był dyrektorem programowym Religia.tv. Działacz społeczny; członek rad fundacji: Kasisi, Dobra Fabryka, Polska Od Nowa.
+    </p1>
+            </div>
+        </div>
+            <div class="stripe"></div>
+            <div class="text">
+                <h1>Pytania na które odpowiadam</h1>
+                <ul>
+                    <li>W której zagranicznej stolicy złoży pan lub pani swoją pierwszą oficjalną wizytę po objęciu urzędu prezydenta?</li>
+                    <li>Jak wrócić do wysokiego tempa rozwoju z przed pandemii? Czy to jest realne i w jakiej perspektywie czasowej?</li>
+                    <li>Czy jest Pan za umożliwieniem przygotowania do pierwszej komunii świętej nalekcjach religii w szkole</li>
+                    <li>Euro czy złoty. Czy i ewentualnie, kiedy Polska powinna przyjąć walutę euro?</li>
+                    <li>Dziesiątki tysięcy uchodźców na granicy UE. Jak powinna zachować się Polska?</li>
+                </ul>
+                <h2>Pytania możesz parafrazować oraz poprosić o uargumentowanie danej tezy</h2>
+            </div><div class="text inline"></div>
+        </div>
+    </div>
+</main>
+
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Władysław_Kosiniak-Kamysz"
+  agent-id="a441b7f1-6f26-4e98-9788-f5985a370c6f"
+  language-code="pl"
+></df-messenger>
+
+{% endblock %}

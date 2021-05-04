@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--<style>-->
+<!--@media (max-width: 1500px) {-->
+<!--  .text1{-->
+<!--      height: 50%;-->
+<!--  }-->
+<!--}-->
+<!--</style>-->
+
+<main class="conteiner_all">
+    <div class="conteiner">
+        <div class="photo">
+            <img src="/static/img/bosak.jpg\" alt = "Krzysztof Bosak">
+            <h1>Krzysztof Bosak</h1>
+        </div>
+
+
+        <div class="content">
+
+            <h1>Dane wyborczne</h1>
+            <div class="text1">
+                <h2>Kandydat na Prezydenta RP</h2>
+                <h2>Komitet Wyborczy: <p>Komitet Wyborczy Kandydata na</p></h2>
+                <p> Prezydenta Rzeczypospolitej Polskiej Krzysztofa Bosaka</p><br>
+                <h2 class="inline">Strona komitetu:</h2> <a href="https://www.bosak2020.pl/komitet">https://www.bosak2020.pl/komitet</a> <br>
+                <h2 class="inline">Strona kandydata:</h2> <a href="https://www.bosak2020.pl">https://www.bosak2020.pl</a> <br>
+                <h2 class="inline">Program:</h2> <a href ="https://bosak2020.pl/wp-content/uploads/Bosak2020_NowyPorzadek.pdf">https://bosak2020.pl/wp-content/uploads/Bosak2020_NowyPorzadek.pdf</a>
+
+            </div>
+
+            <div class="flexbox">
+                    <div class="text inline margin">
+
+                        <h1>Informacje ogólne</h1>
+                        <h3>Poseł</h3>
+                    <h2 class="inline">Klub/koło:</h2> <p class="inline">Koło Poselskie Konfederacja</p> <br>
+                    <h2 class="inline">Data i miejsce urodzenia:</h2> <p>1982-06-13, Zielona Góra</p><br>
+                    <h2 class="inline">Zawód:</h2> <p>działacz społeczny</p><br>
+                    <h2 class="inline">Wykształcenie:</h2> <p>średnie</p><br>
+                    <h2 class="inline">Wygrana w wyborach:</h2> <p>wybory parlamentarne</p><br>
+                    <h2 class="inline">Komitet wyborczy:</h2> <p>Konfederacja Wolność i Niepodległość</p><br>
+                    <h2 class="inline">Okręg:</h2> <p>33 Kielce</p><br>
+                    <h2 class="inline">Liczba głosów:</h2> <p>22 158 (3,89%)</p><br>
+                    <h2 class="inline">Wygrana w wyborach:</h2> <p>Koło Poselskie Konfederacja</p>
+                    </div>
+                    <div class="text inline">
+                        <h1>Notka biograficzna</h1>
+                    <p1>Studiował architekturę na Politechnice Wrocławskiej i ekonomię w Szkole Głównej Handlowej. W latach 2001-2008 członek LPR. W latach 2005-2006 prezes Młodzieży Wszechpolskiej. W l. 2011-13 wiceszef zespołu ekspertów Fundacji Republikańskiej. W l. 2011-2016 członek zarządu stowarzyszenia Marsz Niepodległości. W l. 2011-17 współprowadził warszawski Klub N44. Obecnie wiceprezes Ruchu Narodowego. W 2019 r. kandydował bez powodzenia do Parlamentu Europejskiego. Poseł na Sejm RP w l. 2005-2007 (LPR) i od 2019 r. (Konfederacja); zasiada w komisji gospodarki i rozwoju oraz w komisji ustawodawczej. Kandydat na prezydenta RP w wyborach 2020 r.</p1>
+                    </div>
+                </div>
+            <div class="stripe"></div>
+            <div class="text">
+                <h1>Pytania na które odpowiadam</h1>
+                <ul>
+                    <li>W której zagranicznej stolicy złoży pan lub pani swoją pierwszą oficjalną wizytę po objęciu urzędu prezydenta?</li>
+                    <li>Jak wrócić do wysokiego tempa rozwoju z przed pandemii? Czy to jest realne i w jakiej perspektywie czasowej?</li>
+                    <li>aka jest pana koncepcja zapewnienia bezpieczeństwa militarnego?</li>
+                    <li>Euro czy złoty. Czy i ewentualnie, kiedy Polska powinna przyjąć walutę euro?</li>
+                    <li>Dziesiątki tysięcy uchodźców na granicy UE. Jak powinna zachować się Polska?</li>
+                </ul>
+                <h2>Pytania możesz parafrazować oraz poprosić o uargumentowanie danej tezy</h2>
+            </div><div class="text inline"></div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Krzysztof_Bosak"
+  agent-id="46b68ea5-04bc-432d-b1a2-98bbad505bd2"
+  language-code="pl"
+></df-messenger>
+
+{% endblock %}
